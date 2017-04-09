@@ -1,0 +1,22 @@
+<view>
+	<text>我是数据绑定{{title}}</text>
+</view>
+<view>
+	<text bindtap="toggleCondition">条件渲染</text>
+	<view>
+		<block wx:if="{{show}}">
+			<text>show</text>
+		</block>
+		<block wx:else>
+			<text>hide</text>
+		</block>
+	</view>
+	<view>
+		<text>列表渲染</text>
+		<button bindtap="add">+1</button>
+		<view wx:key="{{index}}" wx:for="{{list}}">
+			<view bindtap="toggleNm" data-item="{{item}}"><text>姓名: {{item.nm}}</text></view>
+			<view><text>年龄: {{item.age}}</text></view>
+		</view>
+	</view>
+</view>
