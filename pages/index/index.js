@@ -1,32 +1,20 @@
-//index.js
-//获取应用实例
-var app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
-    userInfo: {}
+    links: [
+      {url: '/pages/logs/logs', nm: 'log'},
+      {url: '/pages/test/test', nm: '测试页面'},
+      {url: '/pages/ajax/ajax', nm: '测试request'}
+    ]
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    console.log('onLoad')
-    var that = this
-    //调用应用实例的方法获取全局数据
-    app.getUserInfo(function(userInfo){
-      //更新数据
-      that.setData({
-        userInfo:userInfo
-      })
-    })
-  },
-  // 下拉刷新
-  onPullDownRefresh: function() {
+  onShow() {
     this.setData({
-      motto: '123456'
+      persent: 56
     })
-  }
+  },
+   onShareAppMessage() {
+     return {
+       title: 'hello world',
+       path: '/page/user'
+     }
+   }
 })

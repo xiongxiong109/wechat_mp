@@ -1,0 +1,5 @@
+/* pages/ajax/ajax.wxss */
+.ajax-scroll {
+    height: 600rpx;
+    background-color: #ccc;
+}

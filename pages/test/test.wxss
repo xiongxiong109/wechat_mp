@@ -1,0 +1,7 @@
+/*只能获取不同文件夹内的模板, 不能获取样式, 除非把模板放到同一个文件夹内*/
+.article-title {
+    color: #c00;
+    padding: 5px;
+    border-bottom: 1px solid #c00;
+    border-right: 1rpx solid #00cdcd;
+}

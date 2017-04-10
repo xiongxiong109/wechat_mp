@@ -1,0 +1,10 @@
+.com-view {
+    padding: 0 10rpx;
+}
+.com-link {
+    padding: 20rpx;
+    font-size: 14px;
+}
+.com-link + .com-link {
+    border-top: 1rpx solid #ccc;
+}

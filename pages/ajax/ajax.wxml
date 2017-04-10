@@ -1,0 +1,9 @@
+<!--pages/ajax/ajax.wxml-->
+<text>{{title}}</text>
+<button bindtap="fetch" type="primary" disabled="{{isFetch}}" loading="{{isFetch}}">{{txt}}</button>
+<scroll-view scroll-y class="ajax-scroll">
+    <view class="ajax-list" wx:for="{{list}}" wx:key="{{index}}">
+        <text>{{item.title}}</text>
+        <text>{{item.nm}}</text>
+    </view>
+</scroll-view>

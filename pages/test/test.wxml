@@ -1,3 +1,4 @@
+<import src="article.wxml" />
 <view>
 	<text>我是数据绑定{{title}}</text>
 </view>
@@ -20,3 +21,4 @@
 		</view>
 	</view>
 </view>
+<template is="article" data="{{...article}}"></template>
