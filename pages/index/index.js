@@ -3,7 +3,8 @@ Page({
     links: [
       {url: '/pages/logs/logs', nm: 'log'},
       {url: '/pages/test/test', nm: '测试页面'},
-      {url: '/pages/ajax/ajax', nm: '测试request'}
+      {url: '/pages/ajax/ajax', nm: '测试request'},
+      {url: '/pages/upload/upload', nm: '测试wx.upload'}
     ]
   },
   onShow() {

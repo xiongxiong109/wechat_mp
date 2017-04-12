@@ -1,0 +1,12 @@
+<!--pages/upload/upload.wxml-->
+<text>上传接口</text>
+<view class="classname">
+    <label for="header">定制修改头像</label>
+    <switch type="switch" checked="{{needCustomHeader}}" bindchange="evt_toggleNeed" id="header"/>
+    <block wx:if="{{needCustomHeader}}">
+        <button animation="{{animate}}" bindtap="evt_selectAvatar">选择头像</button>
+        <view class="avatar-wrap">
+            <image src="{{temAvatarUrl}}" mode="{{aspectFit}}" class="avatar" bindtap="evt_preview"></image>    
+        </view>
+    </block>
+</view>
