@@ -1,5 +1,13 @@
+/*公共样式*/
 .com-view {
     padding: 0 10rpx;
+}
+.com-title {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px;
 }
 .com-link {
     padding: 20rpx;

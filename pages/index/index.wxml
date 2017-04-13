@@ -1,4 +1,4 @@
 <!--index.wxml-->
 <view class="com-view">
-  <navigator url="{{item.url}}" class="com-link" wx:for="{{links}}">{{item.nm}}</navigator>
+  <navigator url="{{item.url}}" class="com-link" wx:for="{{links}}" wx:key="{{index}}">{{item.nm}}</navigator>
 </view>

@@ -7,4 +7,35 @@
   justify-content: space-between;
   padding: 200rpx 0;
   box-sizing: border-box;
-} 
+}
+/*全局样式*/
+.com-view {
+    padding: 0 10rpx;
+}
+.com-title {
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 5px 5px 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.com-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 30%;
+  height: 3px;
+  background: #ccc;
+}
+.com-link {
+    padding: 20rpx;
+    font-size: 14px;
+}
+.com-link + .com-link {
+    border-top: 1rpx solid #ccc;
+}

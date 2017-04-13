@@ -1,0 +1,11 @@
+<!--pages/location/location.wxml-->
+<view class="com-view">
+    <text class="com-title">地理位置</text>
+    <view>
+        <block wx:if="{{longitude && latitude}}">
+            <text>当前坐标{{latitude}}, {{longitude}}</text>
+            <button bindtap="evt_chooseLocation">打开地图</button>
+        </block>
+        <text wx:else>get location ...</text>
+    </view>
+</view>

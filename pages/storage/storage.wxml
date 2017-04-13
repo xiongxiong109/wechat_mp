@@ -1,0 +1,12 @@
+<!--pages/storage/storage.wxml-->
+<view class="com-view">
+    <text class="com-title">wx.storage</text>
+    <view class="store-progress">
+        <text>当前本地存储使用情况</text>
+        <progress percent="{{ percent }}" show-info activeColor="{{color}}" class="pro"/>
+    </view>
+    <view class="com-container">
+        <button bindtap="evt_set">setStorage</button>
+        <button bindtap="evt_clear">clearStorage</button>
+    </view>
+</view>

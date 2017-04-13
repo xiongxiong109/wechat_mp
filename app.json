@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/test/test",
     "pages/ajax/ajax",
-    "pages/upload/upload"
+    "pages/upload/upload",
+    "pages/storage/storage",
+    "pages/location/location"
   ],
   "window":{
     "backgroundTextStyle":"light",
